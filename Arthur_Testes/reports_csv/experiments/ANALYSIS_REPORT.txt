@@ -1,0 +1,60 @@
+============================================================
+RELATORIO DE ANALISE DE EXPERIMENTOS
+============================================================
+
+Total de experimentos: 8
+Data da analise: 2025-11-13 16:38:22.799011
+
+============================================================
+MELHOR CONFIGURACAO (por throughput)
+============================================================
+
+Experimento: 4n-5s-qbft-v25.10.0_20251113_155536
+
+Configuracao:
+  Nos: 4
+  Tempo de bloco: 5s
+  Consenso: QBFT
+  Versao Besu: 25.10.0
+
+Metricas:
+  Throughput: 251.77 TPS
+  Latencia media: 5.7900s
+  CPU medio: 0.63%
+  Memoria media: 0.67 GB
+
+============================================================
+RANKING COMPLETO (ordenado por throughput)
+============================================================
+
+4n-5s-qbft-v25.10.0_20251113_155536: 251.77 TPS
+6n-5s-ibft-v25.10.0_20251113_161546: 244.27 TPS
+6n-5s-qbft-v24.7.0_20251113_161939: 239.83 TPS
+6n-2s-qbft-v25.10.0_20251113_160744: 226.33 TPS
+6n-10s-qbft-v25.10.0_20251113_161119: 223.77 TPS
+6n-5s-qbft-v25.10.0_20251113_155137: 223.73 TPS
+8n-5s-qbft-v25.10.0_20251113_155906: 222.77 TPS
+10n-5s-qbft-v25.10.0_20251113_160315: 213.83 TPS
+
+============================================================
+OBSERVACOES
+============================================================
+
+Impacto do numero de nos:
+  4 nos: 251.77 TPS medio
+  6 nos: 231.59 TPS medio
+  8 nos: 222.77 TPS medio
+  10 nos: 213.83 TPS medio
+
+Impacto do tempo de bloco:
+  2s: 226.33 TPS medio
+  5s: 232.70 TPS medio
+  10s: 223.77 TPS medio
+
+Impacto do consenso:
+  QBFT: 228.86 TPS medio
+  IBFT: 244.27 TPS medio
+
+Impacto da versao:
+  24.7.0: 239.83 TPS medio
+  25.10.0: 229.50 TPS medio
