@@ -1,0 +1,19 @@
+Experimento: 4n-10s-ibft-v24.7.0
+Timestamp: 20260124_042244
+Data: sáb 24 jan 2026 04:31:00 -04
+=====================================
+Parametros:
+  Nos: 4
+  Tempo de bloco: 10s
+  Consenso: ibft
+  Versao Besu: 24.7.0
+
+Configuracao:
+  Genesis: /home/stefa/Área de Trabalho/BesuBenchmarking/besu/genesis_IBFT.json
+  Besu dir: /home/stefa/Área de Trabalho/BesuBenchmarking/besu/besu-24.7.0
+
+Resultados:
+  HTML: /home/stefa/Área de Trabalho/BesuBenchmarking/caliper/reports_htmls/experiments/4n-10s-ibft-v24.7.0_20260124_042244/
+  CSV: /home/stefa/Área de Trabalho/BesuBenchmarking/caliper/reports_csv/experiments/4n-10s-ibft-v24.7.0_20260124_042244/
+
+Status: CONCLUIDO

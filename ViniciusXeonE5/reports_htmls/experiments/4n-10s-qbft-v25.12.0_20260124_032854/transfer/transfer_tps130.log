@@ -1,0 +1,104 @@
+2026.01.24-03:36:58.265[32m info [39m [caliper] [cli-launch-manager] 	Binding specification is present, performing binding for "besu:latest"
+2026.01.24-03:36:58.267[33m warn [39m [caliper] [bind] 	Working directory not specified. Using "/home/stefa/Área de Trabalho/BesuBenchmarking/caliper"
+2026.01.24-03:36:58.268[32m info [39m [caliper] [bind] 	Binding for besu@latest. This might take some time...
+2026.01.24-03:36:58.268[32m info [39m [caliper] [bind] 	Using working directory: /home/stefa/Área de Trabalho/BesuBenchmarking/caliper
+2026.01.24-03:36:58.268[32m info [39m [caliper] [bind] 	Calling npm with: install web3@1.3.0
+
+up to date, audited 1478 packages in 14s
+
+224 packages are looking for funding
+  run `npm fund` for details
+
+92 vulnerabilities (27 low, 21 moderate, 18 high, 26 critical)
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues possible (including breaking changes), run:
+  npm audit fix --force
+
+Some issues need review, and may require choosing
+a different dependency.
+
+Run `npm audit` for details.
+2026.01.24-03:37:12.586[32m info [39m [caliper] [cli-launch-manager] 	Set workspace path: /home/stefa/Área de Trabalho/BesuBenchmarking/caliper
+2026.01.24-03:37:12.586[32m info [39m [caliper] [cli-launch-manager] 	Set benchmark configuration path: /home/stefa/Área de Trabalho/BesuBenchmarking/caliper/benchmarks/scenario-monitoring/Simple/config-transfer.yaml
+2026.01.24-03:37:12.586[32m info [39m [caliper] [cli-launch-manager] 	Set network configuration path: /home/stefa/Área de Trabalho/BesuBenchmarking/caliper/networks/besu/networkconfig.json
+2026.01.24-03:37:12.587[32m info [39m [caliper] [cli-launch-manager] 	Set SUT type: ethereum
+2026.01.24-03:37:13.038[32m info [39m [caliper] [benchmark-validator] 	No observer specified, will default to `none`
+2026.01.24-03:37:13.039[32m info [39m [caliper] [caliper-engine] 	Starting benchmark flow
+2026.01.24-03:37:13.039[32m info [39m [caliper] [caliper-engine] 	Network configuration attribute "caliper.command.start" is not present, skipping start command
+2026.01.24-03:37:13.048[32m info [39m [caliper] [caliper-engine] 	Executed "init" step in 0 seconds
+2026.01.24-03:37:13.048[32m info [39m [caliper] [caliper-engine] 	Skipping install smart contract phase due to benchmark flow conditioning
+2026.01.24-03:37:13.050[32m info [39m [caliper] [monitor.js] 	Attempting to create resource monitor of type docker
+2026.01.24-03:37:13.051[32m info [39m [caliper] [default-observer] 	Observer interval set to 5000 milliseconds
+2026.01.24-03:37:13.054[32m info [39m [caliper] [round-orchestrator] 	Preparing worker connections
+2026.01.24-03:37:13.054[32m info [39m [caliper] [worker-orchestrator] 	Launching worker 1 of 1
+2026.01.24-03:37:13.058[32m info [39m [caliper] [worker-orchestrator] 	Messenger not configured, entering configure phase...
+2026.01.24-03:37:13.059[32m info [39m [caliper] [worker-orchestrator] 	No existing workers detected, entering worker launch phase...
+2026.01.24-03:37:13.059[32m info [39m [caliper] [worker-orchestrator] 	Waiting for 1 workers to be connected...
+2026.01.24-03:37:13.378[32m info [39m [caliper] [cli-launch-worker] 	Worker is a locally forked process, skipping binding step already performed by the manager process
+2026.01.24-03:37:13.379[32m info [39m [caliper] [cli-launch-worker] 	Set workspace path: /home/stefa/Área de Trabalho/BesuBenchmarking/caliper
+2026.01.24-03:37:13.379[32m info [39m [caliper] [cli-launch-worker] 	Set benchmark configuration path: /home/stefa/Área de Trabalho/BesuBenchmarking/caliper/benchmarks/scenario-monitoring/Simple/config-transfer.yaml
+2026.01.24-03:37:13.379[32m info [39m [caliper] [cli-launch-worker] 	Set network configuration path: /home/stefa/Área de Trabalho/BesuBenchmarking/caliper/networks/besu/networkconfig.json
+2026.01.24-03:37:13.379[32m info [39m [caliper] [cli-launch-worker] 	Set SUT type: ethereum
+2026.01.24-03:37:13.838[32m info [39m [caliper] [worker-orchestrator] 	1 workers connected, progressing to worker assignment phase.
+2026.01.24-03:37:13.838[32m info [39m [caliper] [worker-orchestrator] 	Workers currently unassigned, awaiting index assignment...
+2026.01.24-03:37:13.839[32m info [39m [caliper] [worker-orchestrator] 	Waiting for 1 workers to be assigned...
+2026.01.24-03:37:13.937[32m info [39m [caliper] [worker-orchestrator] 	1 workers assigned, progressing to worker initialization phase.
+2026.01.24-03:37:13.937[32m info [39m [caliper] [worker-orchestrator] 	Waiting for 1 workers to be ready...
+2026.01.24-03:37:13.938[32m info [39m [caliper] [worker-message-handler] 	Initializing Worker#0...
+2026.01.24-03:37:13.952[32m info [39m [caliper] [worker-message-handler] 	Worker#0 initialized
+2026.01.24-03:37:13.953[32m info [39m [caliper] [worker-orchestrator] 	1 workers ready, progressing to test preparation phase.
+2026.01.24-03:37:13.953[32m info [39m [caliper] [round-orchestrator] 	Started round 1 (transfer)
+2026.01.24-03:37:13.960[32m info [39m [caliper] [worker-message-handler] 	Preparing Worker#0 for Round#0
+2026.01.24-03:37:14.057[32m info [39m [caliper] [caliper-worker] 	Info: worker 0 prepare test phase for round 0 is starting...
+2026.01.24-03:37:14.058[32m info [39m [caliper] [caliper-worker] 	Info: worker 0 prepare test phase for round 0 is completed
+2026.01.24-03:37:14.058[32m info [39m [caliper] [worker-message-handler] 	Worker#0 prepared for Round#0
+2026.01.24-03:37:14.059[32m info [39m [caliper] [worker-orchestrator] 	1 workers prepared, progressing to test phase.
+2026.01.24-03:37:16.112[32m info [39m [caliper] [round-orchestrator] 	Monitors successfully started
+2026.01.24-03:37:16.115[32m info [39m [caliper] [worker-message-handler] 	Worker#0 is starting Round#0
+2026.01.24-03:37:16.200[32m info [39m [caliper] [caliper-worker] 	Worker #0 starting workload loop
+2026.01.24-03:37:19.090[32m info [39m [caliper] [default-observer] 	[transfer Round 0 Transaction Info] - Submitted: 50 Succ: 0 Fail:0 Unfinished:50
+2026.01.24-03:37:24.061[32m info [39m [caliper] [default-observer] 	[transfer Round 0 Transaction Info] - Submitted: 50 Succ: 0 Fail:0 Unfinished:50
+2026.01.24-03:37:27.205[32m info [39m [caliper] [worker-message-handler] 	Worker#0 finished Round#0
+2026.01.24-03:37:32.209[32m info [39m [caliper] [default-observer] 	Resetting txCount indicator count
+2026.01.24-03:37:32.211[32m info [39m [caliper] [report-builder] 	### Test result ###
+2026.01.24-03:37:32.222[32m info [39m [caliper] [report-builder] 	
++----------+------+------+-----------------+-----------------+-----------------+-----------------+------------------+
+| Name     | Succ | Fail | Send Rate (TPS) | Max Latency (s) | Min Latency (s) | Avg Latency (s) | Throughput (TPS) |
+|----------|------|------|-----------------|-----------------|-----------------|-----------------|------------------|
+| transfer | 50   | 0    | 134.8           | 9.97            | 9.61            | 9.79            | 5.0              |
++----------+------+------+-----------------+-----------------+-----------------+-----------------+------------------+
+
+2026.01.24-03:37:32.243[32m info [39m [caliper] [report-builder] 	### docker resource stats ###'
+2026.01.24-03:37:32.246[32m info [39m [caliper] [report-builder] 	
++-------------+----------------------+----------------------+------------------+------------------+----------------+-----------------+-----------------+---------------+
+| Name        | CPU%(max)            | CPU%(avg)            | Memory(max) [MB] | Memory(avg) [MB] | Traffic In [B] | Traffic Out [B] | Disc Write [KB] | Disc Read [B] |
+|-------------|----------------------|----------------------|------------------|------------------|----------------|-----------------|-----------------|---------------|
+| /node-besu1 | 0.03916666666666666  | 0.016666666666666666 | 657              | 657              | 0.00           | 0.00            | 120             | 0.00          |
+|-------------|----------------------|----------------------|------------------|------------------|----------------|-----------------|-----------------|---------------|
+| /node-besu4 | 0.01375              | 0.008333333333333333 | 616              | 616              | 0.00           | 0.00            | 84.0            | 0.00          |
+|-------------|----------------------|----------------------|------------------|------------------|----------------|-----------------|-----------------|---------------|
+| /node-besu3 | 0.014583333333333332 | 0.007916666666666667 | 616              | 616              | 0.00           | 0.00            | 92.0            | 0.00          |
+|-------------|----------------------|----------------------|------------------|------------------|----------------|-----------------|-----------------|---------------|
+| /node-besu2 | 0.0075               | 0.004166666666666667 | 876              | 876              | 0.00           | 0.00            | 84.0            | 0.00          |
++-------------+----------------------+----------------------+------------------+------------------+----------------+-----------------+-----------------+---------------+
+
+2026.01.24-03:37:32.247[32m info [39m [caliper] [round-orchestrator] 	Finished round 1 (transfer) in 10.005 seconds
+2026.01.24-03:37:32.248[32m info [39m [caliper] [monitor.js] 	Stopping all monitors
+2026.01.24-03:37:32.349[32m info [39m [caliper] [report-builder] 	### All test results ###
+2026.01.24-03:37:32.350[32m info [39m [caliper] [report-builder] 	
++----------+------+------+-----------------+-----------------+-----------------+-----------------+------------------+
+| Name     | Succ | Fail | Send Rate (TPS) | Max Latency (s) | Min Latency (s) | Avg Latency (s) | Throughput (TPS) |
+|----------|------|------|-----------------|-----------------|-----------------|-----------------|------------------|
+| transfer | 50   | 0    | 134.8           | 9.97            | 9.61            | 9.79            | 5.0              |
++----------+------+------+-----------------+-----------------+-----------------+-----------------+------------------+
+
+2026.01.24-03:37:32.369[32m info [39m [caliper] [report-builder] 	Generated report with path /home/stefa/Área de Trabalho/BesuBenchmarking/caliper/report.html
+2026.01.24-03:37:32.369[32m info [39m [caliper] [monitor.js] 	Stopping all monitors
+2026.01.24-03:37:32.369[32m info [39m [caliper] [worker-orchestrator] 	Sending exit message to connected workers
+2026.01.24-03:37:32.370[32m info [39m [caliper] [round-orchestrator] 	Benchmark finished in 18.417 seconds. Total rounds: 1. Successful rounds: 1. Failed rounds: 0.
+2026.01.24-03:37:32.370[32m info [39m [caliper] [caliper-engine] 	Network configuration attribute "caliper.command.end" is not present, skipping end command
+2026.01.24-03:37:32.370[32m info [39m [caliper] [cli-launch-manager] 	Benchmark successfully finished
+2026.01.24-03:37:32.371[32m info [39m [caliper] [worker-message-handler] 	Worker#0 is exiting

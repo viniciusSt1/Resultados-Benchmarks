@@ -1,0 +1,19 @@
+Experimento: 6n-10s-qbft-v25.12.0
+Timestamp: 20260124_033749
+Data: sáb 24 jan 2026 03:46:36 -04
+=====================================
+Parametros:
+  Nos: 6
+  Tempo de bloco: 10s
+  Consenso: qbft
+  Versao Besu: 25.12.0
+
+Configuracao:
+  Genesis: /home/stefa/Área de Trabalho/BesuBenchmarking/besu/genesis_QBFT.json
+  Besu dir: /home/stefa/Área de Trabalho/BesuBenchmarking/besu/besu-25.12.0
+
+Resultados:
+  HTML: /home/stefa/Área de Trabalho/BesuBenchmarking/caliper/reports_htmls/experiments/6n-10s-qbft-v25.12.0_20260124_033749/
+  CSV: /home/stefa/Área de Trabalho/BesuBenchmarking/caliper/reports_csv/experiments/6n-10s-qbft-v25.12.0_20260124_033749/
+
+Status: CONCLUIDO
