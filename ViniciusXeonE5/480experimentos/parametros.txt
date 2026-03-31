@@ -1,0 +1,34 @@
+TPS:
+DEFAULT_TPS_TRANSFER=(60 70 80 90 100 110 120 130)
+DEFAULT_TPS_OPEN=(150 160 170 180 190 200 210 220)
+DEFAULT_TPS_QUERY=(325 350 375 400 425 450 475 500)
+
+numero_nos tempo_bloco consenso versão_besu
+
+# Variar numero de nos 
+#4 5 qbft 26.2.0
+#6 5 qbft 26.2.0
+#8 5 qbft 26.2.0
+#10 5 qbft 26.2.0
+#12 5 qbft 26.2.0
+
+#4 5 ibft 26.2.0
+#6 5 ibft 26.2.0
+#8 5 ibft 26.2.0
+#10 5 ibft 26.2.0
+#12 5 ibft 26.2.0
+
+# Variar Tempo bloco
+#6 10 qbft 26.2.0
+#6 15 qbft 26.2.0
+#6 20 qbft 26.2.0
+#6 25 qbft 26.2.0
+
+#6 10 ibft 26.2.0
+#6 15 ibft 26.2.0
+#6 20 ibft 26.2.0
+#6 25 ibft 26.2.0
+
+# Rede versão antiga
+#6 5 qbft 24.6.0
+#6 5 ibft 24.6.0
