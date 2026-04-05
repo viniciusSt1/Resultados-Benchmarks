@@ -78,7 +78,7 @@ def generate_comparison_plot(functions_list, metric_col, title_suffix, ylabel, f
 
     ax.set_xticks(x_indices)
     ax.set_xticklabels(ordered_tps, fontsize=20)
-    ax.set_title(f'{ylabel} - {title_suffix} (v26.2.0)', fontsize=25, pad=20)
+    ax.set_title(f'{ylabel} - {title_suffix} (v26.2.0)', fontsize=20)
     ax.set_xlabel('Send Rate Configurado (TPS)', fontsize=16)
     ax.set_ylabel(ylabel, fontsize=16)
     ax.grid(axis='y', linestyle='--', alpha=0.3)
@@ -93,7 +93,9 @@ def generate_comparison_plot(functions_list, metric_col, title_suffix, ylabel, f
     plt.close()
 
 # Execução dos Gráficos
-generate_comparison_plot(['transfer', 'open'], 'Throughput_TPS', 'Open & Transfer', 'Vazão (TPS)', 'vazao_qbft_vs_ibft.png')
-generate_comparison_plot(['transfer', 'open'], 'Avg_Latency_s', 'Open & Transfer', 'Latência (s)', 'latencia_qbft_vs_ibft.png')
-#generate_comparison_plot(['query'], 'Throughput_TPS', 'Query', 'Vazão (TPS)', 'vazao_qbft_vs_ibft_query.png')
-#generate_comparison_plot(['query'], 'Avg_Latency_s', 'Query', 'Latência (s)', 'latencia_qbft_vs_ibft_query.png')
+generate_comparison_plot(['transfer'], 'Throughput_TPS', 'Transfer', 'Vazão (TPS)', 'vazao_qbft_vs_ibft_transfer.png')
+generate_comparison_plot(['transfer'], 'Avg_Latency_s', 'Transfer', 'Latência (s)', 'latencia_qbft_vs_ibft_transfer.png')
+generate_comparison_plot(['open'], 'Throughput_TPS', 'Open', 'Vazão (TPS)', 'vazao_qbft_vs_ibft_open.png')
+generate_comparison_plot(['open'], 'Avg_Latency_s', 'Open', 'Latência (s)', 'latencia_qbft_vs_ibft_open.png')
+generate_comparison_plot(['query'], 'Throughput_TPS', 'Query', 'Vazão (TPS)', 'vazao_qbft_vs_ibft_query.png')
+generate_comparison_plot(['query'], 'Avg_Latency_s', 'Query', 'Latência (s)', 'latencia_qbft_vs_ibft_query.png')

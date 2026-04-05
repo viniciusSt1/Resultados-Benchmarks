@@ -70,8 +70,8 @@ def generate_bt_benchmark_plot(functions_list, metric_col, title_suffix, ylabel,
         ax.text(mid, ax.get_ylim()[1]*0.92, func.upper(), ha='center', fontsize=16, fontweight='bold', alpha=0.6)
 
     ax.set_xticks(ticks=x_indices)
-    ax.set_xticklabels(plot_tps, fontsize=14)
-    ax.set_title(f'{ylabel} - {title_suffix} (6 Nós, v26.2.0)', fontsize=25, pad=20)
+    ax.set_xticklabels(plot_tps, fontsize=20)
+    ax.set_title(f'{ylabel} - {title_suffix} (6 Nós, v26.2.0)', fontsize=20)
     ax.set_xlabel('Send Rate Configurado (TPS)', fontsize=16)
     ax.set_ylabel(ylabel, fontsize=16)
     ax.tick_params(axis='both', labelsize=18)
@@ -80,14 +80,16 @@ def generate_bt_benchmark_plot(functions_list, metric_col, title_suffix, ylabel,
     # Legenda interna no canto superior esquerdo
     handles, labels = ax.get_legend_handles_labels()
     by_label = dict(zip(labels, handles))
-    ax.legend(by_label.values(), by_label.keys(), title='Tempo de Bloco', loc='upper left', fontsize=12, frameon=True)
+    ax.legend(by_label.values(), by_label.keys(), title='Tempo de Bloco', loc='upper left', fontsize=14, frameon=True)
     
     plt.tight_layout()
     plt.savefig(os.path.join(images_dir, filename), dpi=300, bbox_inches='tight')
     plt.close()
 
 # Execução para gerar os 4 arquivos
-generate_bt_benchmark_plot(['transfer', 'open'], 'Throughput_TPS', 'Open & Transfer', 'Vazão (TPS)', 'vazao_bt_open_transfer.png')
-generate_bt_benchmark_plot(['transfer', 'open'], 'Avg_Latency_s', 'Open & Transfer', 'Latência Média (s)', 'latencia_bt_open_transfer.png')
-#generate_bt_benchmark_plot(['query'], 'Throughput_TPS', 'Query', 'Vazão (TPS)', 'vazao_bt_query.png')
-#generate_bt_benchmark_plot(['query'], 'Avg_Latency_s', 'Query', 'Latência Média (s)', 'latencia_bt_query.png')
+generate_bt_benchmark_plot(['open'], 'Throughput_TPS', 'Open', 'Vazão (TPS)', 'vazao_bt_open.png')
+generate_bt_benchmark_plot(['open'], 'Avg_Latency_s', 'Open', 'Latência Média (s)', 'latencia_bt_open.png')
+generate_bt_benchmark_plot(['transfer'], 'Throughput_TPS', 'Transfer', 'Vazão (TPS)', 'vazao_bt_transfer.png')
+generate_bt_benchmark_plot(['transfer'], 'Avg_Latency_s', 'Transfer', 'Latência Média (s)', 'latencia_bt_transfer.png')
+generate_bt_benchmark_plot(['query'], 'Throughput_TPS', 'Query', 'Vazão (TPS)', 'vazao_bt_query.png')
+generate_bt_benchmark_plot(['query'], 'Avg_Latency_s', 'Query', 'Latência Média (s)', 'latencia_bt_query.png')

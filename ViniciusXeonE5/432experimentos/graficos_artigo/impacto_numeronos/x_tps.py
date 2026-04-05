@@ -70,7 +70,7 @@ def generate_benchmark_plot(functions_list, metric_col, title_suffix, ylabel, fi
 
     ax.set_xticks(ticks=x_indices)
     ax.set_xticklabels(plot_tps, fontsize=20)
-    ax.set_title(f'{ylabel} - {title_suffix} (v26.2.0)', fontsize=25, pad=20)
+    ax.set_title(f'{ylabel} - {title_suffix} (v26.2.0)', fontsize=20)
     ax.set_xlabel('Send Rate Configurado (TPS)', fontsize=16)
     ax.set_ylabel(ylabel, fontsize=16)
     ax.tick_params(axis='both', labelsize=18)
@@ -87,7 +87,9 @@ def generate_benchmark_plot(functions_list, metric_col, title_suffix, ylabel, fi
     plt.close()
 
 # Geração dos 4 Gráficos ajustados
-generate_benchmark_plot(['transfer', 'open'], 'Throughput_TPS', 'Open & Transfer', 'Vazão (TPS)', 'vazao_open_transfer.png')
-generate_benchmark_plot(['transfer', 'open'], 'Avg_Latency_s', 'Open & Transfer', 'Latência Média (s)', 'latencia_open_transfer.png')
+generate_benchmark_plot(['open'], 'Throughput_TPS', 'Open', 'Vazão (TPS)', 'vazao_open.png')
+generate_benchmark_plot(['open'], 'Avg_Latency_s', 'Open', 'Latência Média (s)', 'latencia_open.png')
+generate_benchmark_plot(['transfer'], 'Throughput_TPS', 'Transfer', 'Vazão (TPS)', 'vazao_transfer.png')
+generate_benchmark_plot(['transfer'], 'Avg_Latency_s', 'Transfer', 'Latência Média (s)', 'latencia_transfer.png')
 generate_benchmark_plot(['query'], 'Throughput_TPS', 'Query', 'Vazão (TPS)', 'vazao_query.png')
 generate_benchmark_plot(['query'], 'Avg_Latency_s', 'Query', 'Latência Média (s)', 'latencia_query.png')
